@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import WeatherBox from "./components/weatherBox";
+import Attribution from "./components/attribution"
 
 class App extends Component {
   constructor(props) {
@@ -135,6 +136,7 @@ class App extends Component {
           errorMessage={this.state.errorMessages}
           hideImage={this.state.hideImage}
         />
+        <Attribution />
       </div>
     );
   }
