@@ -28,8 +28,13 @@ function weatherBox(props) {
               <p className="card-text">{props.weatherDescription}</p>
               <p className="card-text">{props.temperature}</p>
               <p className="card-text">{props.humidity}</p>
-              <form className="mt-2" onSubmit={props.handleSubmit}>
-                <input type="text" name="zipCode" value={props.zipCode} className="form-control-sm mb-4" onChange={props.handleUserInput} placeholder="Enter City or Zip"></input> <button className="btn btn-primary btn-sm mb-1">Search</button>
+              <form className="mt-2 mb-2" onSubmit={props.handleSubmit}>
+              <div className="input-group">
+              <div className="input-group-prepend mx-auto">
+              <button className="btn btn-secondary rounded-0"><i className="fa fa-search"></i></button>
+                <input type="text" name="zipCode" value={props.zipCode} className="form-control rounded-0" onChange={props.handleUserInput} placeholder="Enter City or Zip"></input>
+          </div>
+                </div>
               </form>
             </div>
           </div>

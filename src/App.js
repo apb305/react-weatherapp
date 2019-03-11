@@ -61,7 +61,7 @@ class App extends Component {
       //console.log(error)
       if (error) {
         this.setState({
-          location: "Please check your zipcode."
+          location: "Please check your city or zipcode."
         })
       }
     })
