@@ -31,8 +31,8 @@ function weatherBox(props) {
               <form className="mt-2 mb-2" onSubmit={props.handleSubmit}>
               <div className="input-group">
               <div className="input-group-prepend mx-auto">
-              <button className="btn btn-secondary rounded-0"><i className="fa fa-search"></i></button>
-                <input type="text" name="zipCode" value={props.zipCode} className="form-control rounded-0" onChange={props.handleUserInput} placeholder="Enter City or Zip"></input>
+              <button className="btn btn-secondary rounded-0" type="submut"><i className="fa fa-search"></i></button>
+                <input type="text" name="zipCode" value={props.zipCode} className="form-control rounded-0" onChange={props.handleUserInput} placeholder="Enter City or Zip" required></input>
           </div>
                 </div>
               </form>
