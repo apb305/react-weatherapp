@@ -7,7 +7,7 @@ function weatherBox(props) {
         <div className="col-md-6 mx-auto mt-3">
         <h5 className="card-title mt-3">ReactJS Weather App</h5>
             <p>Written by Anthony Bernard Jr.</p>
-            <p>See code for this project<a href="https://github.com/apb305" target="noopener noreferrer"> here</a></p>
+            <p>See code for this project<a href="https://github.com/apb305/react-weatherapp" target="noopener noreferrer"> here</a></p>
           <div
             className="card rounded-1 bg-light shadow"
           >
