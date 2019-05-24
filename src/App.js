@@ -67,7 +67,8 @@ class App extends Component {
   getLocation = () => {
     if (navigator.geolocation) { //Load please wait message
         this.setState({
-          hideLoadingMsg: false
+          hideLoadingMsg: false,
+          hideBody: true
       })
       navigator.geolocation.getCurrentPosition(
         position => {
@@ -118,7 +119,6 @@ class App extends Component {
         location: "Geolocation is not supported by this browser."
       });
     }
-    console.log(this.state)
   }
 
   render() {
